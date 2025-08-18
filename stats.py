@@ -10,3 +10,6 @@ def times_each_character_appears(book_text):
         else:
             dictionary[char] = 1
     return dictionary
+def sorted_dictionary(dictionary):
+    dictionary_sorted = dictionary.sort(reverse=True, key=lambda x: dictionary[x])
+    return dictionary_sorted
