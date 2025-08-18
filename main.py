@@ -20,7 +20,12 @@ def main():
     print("----------- Word Count ----------")
     print (f"Found {num_of_words(book_text)} total words")
     print("--------- Character Count -------")
-    print(sorted_dic)
+    for char, count in sorted_dic:
+        if char.isalpha():
+            print(f"{char}: {count}")
+        else:
+            None
+            
 
 
 if __name__ == "__main__":
