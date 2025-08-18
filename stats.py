@@ -3,8 +3,8 @@ def num_of_words(book_text):
 
 def times_each_character_appears(book_text):
     dictionary = {}
+    book_text = book_text.lower()
     for char in book_text:
-        book_text = book_text.lower()
         if char in dictionary:
             dictionary[char] += 1
         else:
