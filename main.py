@@ -6,14 +6,10 @@ from stats import sorted_dictionary
 def get_book_text(filepath):
     with open(filepath) as f:
         return f.read()
-    
-
-
-
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python main.py <book_file>")
+        print("Usage: python3 main.py <path_to_book>")
         sys.exit(1)
     book_path = sys.argv[1]
     book_text = get_book_text(book_path)
